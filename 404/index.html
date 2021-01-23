@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not found</title>
+</head>
+<body>
+    <h2>Bryh there's no such path in this website.</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <style>
+    body{
+        background-image: url(https://cdn.discordapp.com/attachments/382935767112220673/780887131660353596/1606211841099_ezgif-4-6fac24530346-1-1.png);
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    h2{
+        text-align: center;
+    }
+    .btn{
+        width: 180px;
+        height:55px;
+        position:absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        cursor: pointer;
+        background: black;
+        color: white;
+        border: 1px solid white;
+        font-size: 1.1rem;
+        font-weight: 700;
+        outline:none ;
+    }
+    .btn::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffe53b;
+        background-image:linear-gradient(147deg, #ffe53b 0%,#ff2525 74%);
+        z-index: -1;
+        clip-path: circle(0% at 50% 100%);
+        transition: all .8s;
+    }
+    .btn:hover::before{
+        clip-path: circle(100% at 50% 100%);
+    }
+    </style>
+    <script>
+        function toMain(){
+            open("https://bryhmomentgenerator.netlify.app", "_self")
+        }
+        let button = document.getElementById("btn")
+        button.addEventListener("click",toMain)
+    </script>
+</body>
+</html>
