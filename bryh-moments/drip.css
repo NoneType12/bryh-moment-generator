@@ -1,3 +1,10 @@
+*{
+    margin:0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding:0;
+}
 body{
     background-image: url(https://cdn.discordapp.com/attachments/382935767112220673/780887131660353596/1606211841099_ezgif-4-6fac24530346-1-1.png);
     background-position: center;
@@ -5,9 +12,16 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-h1,h2{
+h1{
     background: rgba(201, 202, 211, 50%);
     text-align:center;
+    padding: 20px 30px;
+}
+h2{
+    background-color: rgba(204, 204, 204, 0.5);
+    padding: 10px 20px;
+    margin: 10px 50px;
+    text-align: center;
 }
 img{
     display: block;
