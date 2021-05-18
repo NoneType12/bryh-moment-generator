@@ -1,6 +1,7 @@
 try {
     fetch('bryh-moments/export.json/').then(r=>r.json()).then(data=>{
         globalThis.bryhMoments =  data.bryhMoments;
+        globalThis.description = data.descriptions
         return data
     });
     function bryhMomentGenerator(min,max){
@@ -13,8 +14,10 @@ try {
         } else if(bryhMomentSelector > bryhMoments.length){
             bryhMomentSelector--
         }
-        let bryhIMG = document.getElementById("bryhImg")
-        bryhIMG.setAttribute("src", bryhMoments[bryhMomentSelector])
+        let bryhIMG = document.getElementById("bryhImg");
+        var bryhDescription = document.getElementById('description');
+        bryhDescription.textContent = description[bryhMomentSelector];
+        bryhIMG.setAttribute("src", bryhMoments[bryhMomentSelector]);
         console.log(bryhMomentSelector);
     }
     let btn = document.getElementById("btn")
