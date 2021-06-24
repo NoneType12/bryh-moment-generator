@@ -72,8 +72,10 @@ li a {
     padding: 20px 121.2px;
     display: block;
     background: #cccccc;
+    text-decoration: none;
+
     font-size: 20px;
-    width: 10px;
+    width: 42px;
 }
 li a:hover{
     background: #ffffff;
